@@ -10,13 +10,18 @@ class Mobile
     {
         System.out.println(brand + " : " + price + " : " + name);
     }
+
+    public static void show1(Mobile obj)
+    {
+        System.out.println(obj.brand + " : " + obj.price + " : " + name);
+    }
 }
 
 public class Staticv
 {
     public static void main(String a[])
     {
-        Mobile obj1= new Mobile();
+        Mobile obj1= new Mobile(); 
         obj1.brand = "Apple";
         obj1.price = 1500;
         Mobile.name = "Smartphone";
@@ -30,5 +35,7 @@ public class Staticv
 
         obj1.show();
         obj2.show();
+
+        Mobile.show1(obj1);
     }
 }

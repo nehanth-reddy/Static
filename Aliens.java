@@ -1,0 +1,32 @@
+
+class Human
+{
+    private int age;
+    private String name;
+    public int getAge() {
+        return age;
+    }
+    public void setAge(int a, Human obj) {
+        Human obj1 = obj;
+        obj1.age = a;
+    }
+    public String getName() {
+        return name;
+    }
+    public void setName(String n) {
+        name = n;
+    }
+
+}
+
+public class Aliens 
+{
+    public static void main(String[] args) 
+    {
+        Human obj = new Human();
+        obj.setAge(13,obj);
+        obj.setName("Nehanth");
+
+        System.out.println(obj.getName() + " : " + obj.getAge());
+    }
+}
