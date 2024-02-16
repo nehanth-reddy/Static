@@ -31,7 +31,6 @@ public class Aliens
     public static void main(String[] args) 
     {
         Human obj = new Human();
-        Human obj1 = new Human();
 
         // obj.setAge(13);
         // obj.setName("Nehanth");
